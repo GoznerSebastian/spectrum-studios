@@ -1,0 +1,226 @@
+@import "../../app.scss";
+
+.listContainer {
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .carousel {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .box {
+        max-width: 90%;
+        text-align: center;
+        margin: auto;
+      }
+
+      .carouselButtons {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 20px;
+
+        button {
+          background: transparent;
+          border: none;
+          font-size: 24px;
+          color: white;
+          cursor: pointer;
+
+          &:hover {
+            color: #00aaff;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+section {
+  min-height: 100%;
+}
+
+.services {
+  background: #171717;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 50px 0;
+
+  &.mobile {
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+
+  @include mobile {
+    justify-content: flex-start; /* Ensure alignment at the top */
+    padding: 20px; /* Reduce padding on smaller screens */
+    height: auto; /* Allow the section to grow dynamically */
+    overflow-y: auto; /* Enable scrolling within the section */
+  }
+
+  .textContainer {
+    flex: 1;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+
+    @include mobile {
+      align-self: center;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    p {
+      font-weight: 300;
+      font-size: 24px;
+      color: #ffffff;
+      text-align: right;
+
+      @include mobile {
+        text-align: center;
+      }
+    }
+
+    hr {
+      width: 500px;
+      border: none;
+      border-top: 1px solid #4c4c6d;
+
+      @include mobile {
+        width: 300px;
+      }
+    }
+  }
+
+  .titleContainer {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+
+    @include mobile {
+      width: 100%;
+    }
+
+    .title {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      margin-bottom: 20px;
+
+      @include mobile {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+      }
+
+      img {
+        width: 300px;
+        height: 100px;
+        border-radius: 20px;
+        object-fit: cover;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+
+        @include mobile {
+          width: 200px;
+          height: 50px;
+        }
+      }
+
+      h1 {
+        font-size: 64px;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: #ffffff;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+
+        @include mobile {
+          font-size: 36px;
+        }
+      }
+    }
+  }
+
+  .listContainer {
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1366px;
+    margin: auto;
+    gap: 30px;
+
+    @include mobile {
+      flex-direction: column; /* Stack items vertically */
+      width: 100%;
+      align-items: center; /* Center all items horizontally */
+      gap: 20px; /* Adjust spacing between items */
+      overflow-y: auto; /* Allow scrolling within this section */
+    }
+
+    .box {
+      flex: 1 1 calc(33.333% - 20px);
+      max-width: 350px;
+      padding: 40px;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #171717;
+      color: white;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+      margin-left: 0;
+      margin-right: 0;
+
+      &:hover {
+        transform: scale(1.05);
+        border-color: #00aaff; // Light blue border on hover
+        box-shadow: 0px 8px 15px rgba(0, 170, 255, 0.4); // Subtle blue shadow
+      }
+
+      @include mobile {
+        max-width: 90%; /* Adjust box width for better fit */
+      }
+
+      .icon {
+        font-size: 48px;
+        color: #00aaff;
+        margin-bottom: 15px;
+      }
+
+      h2 {
+        font-size: 26px;
+        font-weight: bold;
+        color: #ffffff;
+        margin-bottom: 10px;
+
+        @include mobile {
+          text-align: center; /* Center text */
+        }
+      }
+
+      p {
+        font-size: 16px;
+        font-weight: 300;
+        color: #f0f0f0;
+        text-align: center;
+
+        @include mobile {
+          text-align: center; /* Ensure text alignment */
+        }
+      }
+    }
+  }
+}
