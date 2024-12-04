@@ -8,7 +8,6 @@ import Contact from "./components/contact/Contact";
 function App() {
     return (
         <div>
-            {/* Apply the 'snap-section' class to sections that need scroll snapping */}
             <section id="Homepage">
                 <Hero/>
             </section>
@@ -21,7 +20,7 @@ function App() {
             <section id="Portfolio">
                 <Parallax type="portfolio"/>
             </section>
-            <Portfolio/>
+                <Portfolio/>
             <section id="Contact">
                 <Contact/>
             </section>

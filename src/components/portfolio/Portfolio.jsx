@@ -27,6 +27,12 @@ const items = [
     img: "./giorgio.jpg",
     desc: "Giorgio Mare enlisted our services to promote their exquisite coastal restaurant and its fine dining experience. We created a series of videos showcasing the culinary artistry, stunning ocean views, and the welcoming ambiance of the venue. By blending aerial shots with close-ups of signature dishes, we helped Giorgio Mare captivate their audience and boost both foot traffic and online reservations.",
   },
+  {
+    id: 5,
+    title: "",
+    img: "./qubmenu.png",
+    desc: "We collaborated with QubMenu, a pioneer in digital menus for restaurants, to create engaging video and photography content. Our team captured the innovative design and seamless functionality of their products, showcasing how QubMenu enhances the dining experience. The final visuals effectively highlight their technology, supporting QubMenu's marketing and brand promotion efforts.",
+  },
 ];
 
 

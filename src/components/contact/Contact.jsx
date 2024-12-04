@@ -166,7 +166,7 @@ const Contact = () => {
                   </ul>
               )}
             </div>
-            <textarea rows={8} placeholder="Message" name="message"/>
+            <textarea rows={4} placeholder="Message" name="message"/>
             <button className="text-2xl text-white">SUBMIT</button>
             {error && "Error"}
             {success && "Success"}
